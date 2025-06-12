@@ -408,7 +408,7 @@ body {
 @media screen and (max-width: 822px) {
   .header_div .header_div_content .banner {
     height: 400px;
-    background: url(../images/Banner.jpg);
+    background: url(../images/banner.jpg);
     background-size: cover;
   }
   .header_div .header_div_content .banner .banner_content {
