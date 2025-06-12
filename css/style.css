@@ -491,7 +491,7 @@ body {
 }
 
 .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block {
-  width: 15%;
+  width: 16%;
   height: 100%;
   background-color: #f0f0f0;
   border: 4px solid;
@@ -530,7 +530,7 @@ body {
 .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block .block_content .block_svg::after {
   content: '';
   position: absolute;
-  top: -73px;
+  top: -82px;
   width: 130%;
   height: 130%;
   background-color: #fff;
@@ -764,15 +764,15 @@ body {
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1300px) {
   .advantages .advantages_content {
     width: 100%;
   }
   .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block {
-    width: 23%;
+    width: 24%;
   }
   .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block .block_content {
-    height: 280px;
+    height: 450px;
   }
 }
 
@@ -784,7 +784,7 @@ body {
     width: 40%;
   }
   .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block .block_content {
-    height: 330px;
+    height: 350px;
   }
   .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block .block_content .block_svg::after {
     top: -80px;
@@ -801,6 +801,32 @@ body {
   .advantages .advantages_content {
     background: none;
     border-radius: 0;
+  }
+  .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block .block_content {
+    height: 250px;
+  }
+  .advantages .advantages_content .policy {
+    margin: 0 auto;
+  }
+  .advantages .advantages_content .policy .policy_content .policy_ul .policy_ul_content ol li:nth-child(2) .policy_ul_box {
+    display: block;
+  }
+  .advantages .advantages_content .policy .policy_content .policy_ul .policy_ul_content ol li:nth-child(2) .policy_ul_box img {
+    padding-top: 20px;
+    margin-left: 0;
+  }
+  .advantages .advantages_content .policy .policy_content .policy_ul .policy_ul_content ol li:nth-child(2) .policy_ul_box p {
+    padding: 20px;
+  }
+  .advantages .advantages_content .policy .policy_content .policy_ul .policy_ul_content ol li:nth-child(4) .policy_ul_box {
+    display: block;
+  }
+  .advantages .advantages_content .policy .policy_content .policy_ul .policy_ul_content ol li:nth-child(4) .policy_ul_box img {
+    padding-top: 20px;
+    margin-left: 0;
+  }
+  .advantages .advantages_content .policy .policy_content .policy_ul .policy_ul_content ol li:nth-child(4) .policy_ul_box p {
+    padding: 20px;
   }
 }
 
