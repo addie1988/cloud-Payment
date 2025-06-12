@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./images/cloud.png" />
+    <title>云支付</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="header_div">
+        <div class="header_div_content">
+
+
+            <div class="spacer" id="spacer"></div>
+            <div class="header" id="header">
+                <div class="header_content">
+                    <div class="logo">
+                        <div class="logo_content">
+                            <a href="./index.html">
+                                <img src="./images/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu_language">
+                        <div class="menu_language_content">
+                            <div class="hamburger" id="hamburger">☰</div>
+                            <div class="menu nav-menu" id="nav-menu">
+                                <div class="menu_content">
+                                    <ul>
+                                        <li><a class="scroll-link" href="#core">核心优势</a></li>
+                                        <li><a class="scroll-link" href="#activity">专属用户活动</a></li>
+                                        <li><a class="scroll-link" href="#payment">云支付的愿景</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="language">
+                                <div class="language_content">
+                                    <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
+                                        <img id="languageIcon" src="./images/icon_1.svg" alt="English">
+                                    </a>
+                                    <div id="dropdownMenu" class="dropdown-content">
+                                        <span onclick="changeLanguage('en')">
+                                            <img src="./images/icon_1.svg" alt="English">
+                                            <p>English</p>
+                                        </span>
+                                        <span onclick="changeLanguage('zh-CN')">
+                                            <img src="./images/icon_2.svg" alt="简体中文">
+                                            <p>简体中文</p>
+                                        </span>
+                                        <span onclick="changeLanguage('ja')">
+                                            <img src="./images/icon_3.svg" alt="日文">
+                                            <p>日文</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- banner -->
+            <div class="banner">
+                <div class="banner_content">
+                    <div class="banner_img">
+                        <div class="banner_main">
+                            <div class="banner_main_content">
+                                <div class="banner_main_button">
+                                    <div class="banner_main_button_content">
+                                        <div class="banner_main_button_dow">
+                                            <div class="banner_main_button_dow_content">
+                                                <h1>「云支付」致力于打造更自由、高效的支付体验，为个人与企业用户提供快速、安全、简单易用的资金流通解决方案。我们相信，支付不该有界限，资金的流动应该如同云端般轻盈而稳定。
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner_main_img">
+                                    <div class="banner_main_img_content">
+                                        <img src="./images/people.png" alt="Banner">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner_img_content">
+                            <img src="./images/Banner.jpg" alt="Banner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+    <!-- advantages -->
+    <duv class="advantages">
+        <div class="advantages_content">
+            <div class="advantages_title">
+                <div class="advantages_title_content" id="core">
+                    <h2>核心优势</h2>
+                    <p>为什么选择云支付？</p>
+                </div>
+            </div>
+            <div class="advantages_list">
+                <div class="advantages_list_content">
+                    <ul class="block-container">
+                        <l1 class="block" data-id="1">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        stroke-linejoin: round;
+                                                    }
+
+                                                    .st0,
+                                                    .st1,
+                                                    .st2 {
+                                                        stroke-linecap: round;
+                                                    }
+
+                                                    .st0,
+                                                    .st1,
+                                                    .st2,
+                                                    .st3 {
+                                                        fill: none;
+                                                        stroke: #E70012;
+                                                        stroke-dashoffset: 1114px;
+                                                        stroke-dasharray: 1114px;
+                                                        animation: draw 8s infinite ease-in-out;
+                                                    }
+
+                                                    .st0,
+                                                    .st2,
+                                                    .st3 {
+                                                        stroke-width: 3px;
+                                                    }
+
+                                                    .st1 {
+                                                        stroke-width: 2px;
+                                                    }
+
+                                                    .st1,
+                                                    .st2,
+                                                    .st3 {
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    @keyframes draw {
+                                                        100% {
+                                                            stroke-dashoffset: 0;
+                                                        }
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <polyline class="st0"
+                                                points="42.89 68.84 11.48 68.84 11.48 10.31 47.81 10.31 47.81 34.02" />
+                                            <path class="st0"
+                                                d="M48.93,76.41H10.35c-3.02,0-5.47-2.46-5.47-5.47V8.21c0-3.02,2.46-5.47,5.47-5.47h38.58c3.02,0,5.47,2.46,5.47,5.47v23.69" />
+                                            <g>
+                                                <path class="st3"
+                                                    d="M59.9,35.97l-16.01,5.14v18.58c0,10.65,16.01,16.43,16.01,16.43,0,0,16.01-5.79,16.01-16.43v-18.58l-16.01-5.14Z" />
+                                                <polyline class="st3" points="52.16 57.1 56.62 61.56 67.64 50.53" />
+                                            </g>
+                                            <g>
+                                                <path class="st2"
+                                                    d="M35.25,27.46c.03-3.32-2.84-6.16-6.18-6.05-4.34.15-6.33,5.41-3.94,8.8,1.68,2.38,5.04,2.56,7.46,3.78,2.77,1.41,3.4,4.97,1.67,7.47-2.99,4.31-11.34,2.17-10.09-3.57" />
+                                                <line class="st2" x1="29.06" y1="21.41" x2="29.06" y2="18.35" />
+                                                <line class="st2" x1="29.06" y1="46.81" x2="29.06" y2="43.74" />
+                                            </g>
+                                            <line class="st1" x1="25.27" y1="72.74" x2="34.02" y2="72.74" />
+                                            <line class="st1" x1="25.27" y1="53.75" x2="34.02" y2="53.75" />
+                                            <line class="st1" x1="19.39" y1="59.15" x2="39.9" y2="59.15" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p>安全交易保障</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="2">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0,
+                                                    .st1 {
+                                                        fill: none;
+                                                        stroke: #E70012;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st33 {
+                                                        fill: none;
+                                                        stroke-width: 1px;
+                                                        stroke: #E70012;
+                                                    }
+
+                                                    .st1 {
+                                                        stroke-width: 3px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="st1"
+                                                d="M13,23.33L3.15,45.76c-.5,1.13-.01,2.46,1.1,3l3.76,1.83c1.18.57,2.6.05,3.12-1.16l9.8-22.65c.51-1.17-.03-2.52-1.2-3.03l-3.71-1.61c-1.16-.51-2.52.03-3.03,1.19Z" />
+                                            <path class="st1" d="M19.72,29.59s5.43,3.33,7.63,3.11,6.77-3.04,11.78.11" />
+                                            <path class="st1" d="M12.04,47.35s4.09,1.93,4.75,3,1.22,3.51,1.22,3.51" />
+                                            <path class="st1"
+                                                d="M60.88,30.94s-2.15,2.76-6.44,1.88-8.04-5.17-16.84,1.98-10.13,7.71-10.13,7.71c0,0,3.41,7.38,14.53,1.43,5.83-2.31,6.5-.88,8.26.22s11.56,6.88,11.56,6.88c0,0,2.53,3.69-2.2,5.78" />
+                                            <path class="st1"
+                                                d="M49.04,51.04l9.91,5.87c2.42,2.55-1.54,6.95-4.79,5.52s-10.51-6.57-10.51-6.57" />
+                                            <path class="st1" d="M54.16,62.43s1.82,5.5-4.79,5.39l-6.41-3.63" />
+                                            <line class="st1" x1="61.99" y1="51.34" x2="67.65" y2="49.77" />
+                                            <path class="st1"
+                                                d="M60.02,28.77l8.85,22.2c.6,1.5,2.33,2.2,3.8,1.53l3.52-1.6c1.38-.63,2.02-2.24,1.45-3.64l-8.94-21.9c-.58-1.42-2.19-2.12-3.62-1.58l-3.43,1.3c-1.48.56-2.21,2.22-1.62,3.69Z" />
+                                            <rect class="st1" x="16.93" y="51.17" width="7.38" height="11.4" rx="3.69"
+                                                ry="3.69" transform="translate(27.65 -3.21) rotate(26.6)" />
+                                            <path class="st1"
+                                                d="M26.51,54.48h0c2.04,0,3.69,1.65,3.69,3.69v6.49c0,2.04-1.65,3.69-3.69,3.69h0c-1.96,0-3.55-1.59-3.55-3.55v-6.77c0-1.96,1.59-3.55,3.55-3.55Z"
+                                                transform="translate(30.31 -5.4) rotate(26.6)" />
+                                            <path class="st1"
+                                                d="M32.35,58.67h0c2.04,0,3.69,1.65,3.69,3.69v4.26c0,2.04-1.65,3.69-3.69,3.69h0c-1.62,0-2.94-1.32-2.94-2.94v-5.76c0-1.62,1.32-2.94,2.94-2.94Z"
+                                                transform="translate(32.33 -7.83) rotate(26.6)" />
+                                            <path class="st1"
+                                                d="M38.5,62.1h0c2.04,0,3.69,1.65,3.69,3.69v4.26c0,2.04-1.65,3.69-3.69,3.69h0c-1.82,0-3.3-1.48-3.3-3.3v-5.03c0-1.82,1.48-3.3,3.3-3.3Z"
+                                                transform="translate(34.5 -10.14) rotate(26.6)" />
+                                            <path class="st1"
+                                                d="M49.37,67.83c.31.74.12,1.62-.04,2.41-.31,1.46-1.88,2.18-3.24,2.26-1.89.11-3.32-.93-4.88-1.82" />
+                                            <line class="st1" x1="21.96" y1="10.58" x2="26.52" y2="19.17" />
+                                            <line class="st1" x1="40.1" y1="5.73" x2="40.1" y2="15.42" />
+                                            <line class="st1" x1="58.51" y1="10.58" x2="53.23" y2="19.17" />
+                                            <circle class="st33" cx="15.72" cy="27.82" r="1.77" />
+                                            <circle class="st33" cx="64.92" cy="28.97" r="1.77" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p>企业与用户间提现即时到账</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="3">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        fill: none;
+                                                        stroke: #E70012;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 3px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="st0"
+                                                d="M29.56,78.51l-5.45-11.73s-2.07-2.65,1.15-5.03c2.75-2.04,4.57-.44,5.78.58.51.43,5.12,7.76,5.12,7.76v-36.08s.17-3.14,3.8-3.14,4.21,3.47,4.21,3.47v30.3" />
+                                            <path class="st0"
+                                                d="M44.17,56.19s.58-3.19,4.65-3.19c3.47,0,3.63,3.19,3.63,3.19v9.47" />
+                                            <path class="st0"
+                                                d="M52.47,55.75s.26-3.14,4.06-3.14,3.8,3.91,3.8,3.91v9.14" />
+                                            <path class="st0"
+                                                d="M60.33,59.14s.11-3.33,4.4-3.33c3.52,0,3.85,3.96,3.8,4.79s0,17.67,0,17.67" />
+                                            <path class="st0"
+                                                d="M37.21,31.93c-1.54-1.04-2.55-2.8-2.55-4.79,0-3.19,2.59-5.78,5.78-5.78s5.78,2.59,5.78,5.78c0,2.21-1.24,4.14-3.07,5.11" />
+                                            <circle class="st0" cx="57.43" cy="8.31" r="4.43" />
+                                            <circle class="st0" cx="22.97" cy="46.03" r="4.43" />
+                                            <path class="st0"
+                                                d="M36.16,40.96c-5.9-1.82-10.2-7.33-10.2-13.83,0-7.99,6.48-14.47,14.47-14.47s14.47,6.48,14.47,14.47c0,6.53-4.32,12.05-10.26,13.85" />
+                                            <path class="st0"
+                                                d="M20.06,42.7c-3.3-4.32-5.26-9.71-5.26-15.57C14.79,12.97,26.27,1.49,40.44,1.49c1.03,0,2.04.06,3.03.18" />
+                                            <path class="st0"
+                                                d="M60.65,11.34c3.41,4.35,5.44,9.83,5.44,15.79,0,12.91-9.54,23.59-21.95,25.38" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p>操作简单、界面直觉</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="4">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        stroke-width: 3px;
+                                                    }
+
+                                                    .st0,
+                                                    .st1 {
+                                                        fill: none;
+                                                        stroke: #E70012;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                    }
+
+                                                    .st1 {
+                                                        stroke-width: 2px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="st0"
+                                                d="M18.37,24.47C18.37,12.53,28.05,1.84,40,1.84s21.63,10.68,21.63,22.63" />
+                                            <path class="st0"
+                                                d="M55,22.87c0-8.29-6.72-15-15-15s-15,6.72-15,15v16.65s2.28,11.4,16.05,10.73c11.97-.58,13.54-10.05,13.54-10.05l.41-17.34Z" />
+                                            <path class="st0"
+                                                d="M24.12,24.75s-9.33-1.65-9.33,7.68,10.21,7.1,10.21,7.1" />
+                                            <path class="st0"
+                                                d="M55.88,24.75s9.33-1.65,9.33,7.68-10.21,7.1-10.21,7.1" />
+                                            <path class="st0"
+                                                d="M25,25.64s9.61,3.04,18.94-3.36c0,0,4.85,4.17,11.06,3.62" />
+                                            <ellipse class="st0" cx="40" cy="41.05" rx="4.12" ry="3.22" />
+                                            <line class="st0" x1="44.12" y1="41.05" x2="54.38" y2="41.05" />
+                                            <line class="st0" x1="33.64" y1="49.24" x2="33.64" y2="54.06" />
+                                            <polygon class="st0"
+                                                points="40 61.33 32.64 53.97 24.77 57.65 32.88 68.1 40 61.33" />
+                                            <path class="st0" d="M29.26,55.55s-24.62-1.58-27.51,22.79h31.05" />
+                                            <line class="st0" x1="46.36" y1="49.24" x2="46.36" y2="54.06" />
+                                            <polygon class="st0"
+                                                points="40 61.33 47.36 53.97 55.23 57.65 47.12 68.1 40 61.33" />
+                                            <path class="st0" d="M50.74,55.55s24.62-1.58,27.51,22.79h-31.05" />
+                                            <circle class="st1" cx="40" cy="77.34" r="1.65" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p>24小时在线服务 + AI 智能客服支持</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="5">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        fill: none;
+                                                        stroke: #E70012;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                        stroke-width: 2px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g>
+                                                <path class="st0"
+                                                    d="M43.68,21.99c.02-2.3-1.97-4.27-4.28-4.19-3.01.1-4.38,3.75-2.73,6.09,1.17,1.65,3.49,1.77,5.17,2.62,1.92.97,2.36,3.45,1.15,5.18-2.07,2.98-7.86,1.5-6.99-2.47" />
+                                                <line class="st0" x1="39.4" y1="17.8" x2="39.4" y2="15.68" />
+                                                <line class="st0" x1="39.4" y1="35.39" x2="39.4" y2="33.27" />
+                                            </g>
+                                            <circle class="st0" cx="39.8" cy="25.54" r="11.21" />
+                                            <circle class="st0" cx="39.8" cy="25.54" r="15.91" />
+                                            <circle class="st0" cx="12.3" cy="37.67" r="5.17" />
+                                            <path class="st0"
+                                                d="M16.72,47.4s4.62,5.56,5.06,5.83c.33.21,1.01.15,1.39.19.99.09,1.98.14,2.98.2,1.09.06,2.18.12,3.27.17s2.56.4,3.55.04c.86-.32,1.82-.82,1.75-1.76-.14-2.05-3.94-2.28-5.03-2.42l-5.65-.72-4.84-6.52s-1.72-1.4-4.29,0c-3.32,1.81-2.26,5.11-2.26,5.11l6.99,11.66s1.21,2.2,5.23,2.97,5.72.66,6.66,1.38c1.02.78,1.61,2.68,2.14,3.8.4.85.79,1.7,1.17,2.56.38.86.67,1.86,1.34,2.55.43.44,1.02.75,1.63.72.44-.02.86-.19,1.24-.42.82-.48,1.25-1.13,1.07-2.12-.53-2.95-1.81-6.01-3.42-8.54-.82-1.29-1.87-2.42-3.29-3.02-1.98-.83-4.02-1.12-4.73-1.94s-1.98-3.18-1.98-3.18" />
+                                            <path class="st0" d="M4.5,68.81s2.1-11.46,12.28-14.4" />
+                                            <path class="st0" d="M34.72,52.08s3.11.77,6.68.77" />
+                                            <path class="st0"
+                                                d="M22.06,61.22l-3.3,9.58s-.64,2.31,1.65,3.08c2.29.77,2.86-1.76,2.86-1.76l3.48-9.63" />
+                                            <circle class="st0" cx="68.5" cy="37.67" r="5.17" />
+                                            <path class="st0"
+                                                d="M64.08,47.4s-4.62,5.56-5.06,5.83c-.33.21-1.01.15-1.39.19-.99.09-1.98.14-2.98.2-1.09.06-2.18.12-3.27.17s-2.56.4-3.55.04c-.86-.32-1.82-.82-1.75-1.76.14-2.05,3.94-2.28,5.03-2.42l5.65-.72,4.84-6.52s1.72-1.4,4.29,0c3.32,1.81,2.26,5.11,2.26,5.11l-6.99,11.66s-1.21,2.2-5.23,2.97-5.72.66-6.66,1.38c-1.02.78-1.61,2.68-2.14,3.8-.4.85-.79,1.7-1.17,2.56s-.67,1.86-1.34,2.55c-.43.44-1.02.75-1.63.72-.44-.02-.86-.19-1.24-.42-.82-.48-1.25-1.13-1.07-2.12.53-2.95,1.81-6.01,3.42-8.54.82-1.29,1.87-2.42,3.29-3.02,1.98-.83,4.02-1.12,4.73-1.94.72-.81,1.98-3.18,1.98-3.18" />
+                                            <path class="st0" d="M76.3,68.81s-2.1-11.46-12.28-14.4" />
+                                            <path class="st0" d="M46.08,52.08s-1.11.77-4.68.77" />
+                                            <path class="st0"
+                                                d="M58.74,61.22l3.3,9.58s.64,2.31-1.65,3.08-2.86-1.76-2.86-1.76l-3.48-9.63" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p>买卖即时沟通</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="6">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st0,
+                                                    .st1 {
+                                                        fill: none;
+                                                        stroke: #E70012;
+                                                        stroke-linecap: round;
+                                                        stroke-width: 2px;
+                                                    }
+
+                                                    .st1 {
+                                                        stroke-linejoin: round;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g>
+                                                <g>
+                                                    <path class="st0"
+                                                        d="M44.12,42.84c-13.54-1.49-20.31-7.95-20.31-7.95,0,0-6.77,6.47-20.31,7.95,0,0-.66,24.28,20.31,34.18,20.97-9.91,20.31-34.18,20.31-34.18Z" />
+                                                    <path class="st1"
+                                                        d="M25.71,54.42c1.13-.66,1.88-1.88,1.88-3.28,0-2.09-1.7-3.79-3.79-3.79s-3.79,1.7-3.79,3.79c0,1.4.76,2.62,1.88,3.28h0l-1.4,9.62h6.61l-1.4-9.62h0Z" />
+                                                </g>
+                                                <path class="st1"
+                                                    d="M16.46,39.41v-8.22c0-4.06,3.29-7.35,7.35-7.35h0c4.06,0,7.35,3.29,7.35,7.35v8.22" />
+                                                <path class="st1"
+                                                    d="M11.47,41.25v-10.1c0-6.81,5.52-12.34,12.34-12.34h0c6.81,0,12.34,5.52,12.34,12.34v10.1" />
+                                            </g>
+                                            <line class="st1" x1="75.99" y1="9.96" x2="75.99" y2="52.73" />
+                                            <line class="st1" x1="23.9" y1="18.34" x2="23.9" y2="9.96" />
+                                            <ellipse class="st1" cx="49.94" cy="10.23" rx="26.05" ry="5.37" />
+                                            <path class="st1"
+                                                d="M25.94,18.73c3.95-1.91,13.21-3.24,24-3.24,14.38,0,26.05,2.38,26.05,5.31s-11.66,5.31-26.05,5.31c-5.7,0-10.97-.37-15.26-1.01" />
+                                            <path class="st1"
+                                                d="M35.38,27.01c4.16-.57,9.17-.91,14.56-.91,14.38,0,26.05,2.38,26.05,5.31s-11.66,5.31-26.05,5.31c-5.07,0-9.8-.3-13.8-.81" />
+                                            <path class="st1"
+                                                d="M36.14,37.54c4-.51,8.73-.81,13.8-.81,14.38,0,26.05,2.38,26.05,5.31s-11.66,5.31-26.05,5.31c-2,0-3.95-.05-5.82-.13" />
+                                            <path class="st1"
+                                                d="M44.07,47.5c1.89-.09,3.86-.14,5.88-.14,14.38,0,26.05,2.4,26.05,5.37s-11.66,5.37-26.05,5.37c-3.04,0-5.97-.11-8.68-.31" />
+                                            <circle class="st1" cx="66.65" cy="20.83" r="2.03" />
+                                            <circle class="st1" cx="66.65" cy="31.38" r="2.03" />
+                                            <circle class="st1" cx="66.65" cy="41.93" r="2.03" />
+                                            <circle class="st1" cx="66.65" cy="52.48" r="2.03" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p>稳定的云端系统架构</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="7">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        stroke-width: 3px;
+                                                    }
+
+                                                    .st0,
+                                                    .st1 {
+                                                        fill: none;
+                                                        stroke: #E70012;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                    }
+
+                                                    .st1 {
+                                                        stroke-width: 2px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <polyline class="st0"
+                                                points="40.92 74.28 9.78 74.28 9.78 5.71 18.06 5.71 18.94 7.74 36.12 7.74 36.45 5.71 45.8 5.71 45.8 13.57" />
+                                            <polyline class="st0" points="45.8 69.45 45.8 74.28 37.52 74.28" />
+                                            <line class="st0" x1="45.8" y1="50.24" x2="45.8" y2="63.51" />
+                                            <path class="st0"
+                                                d="M27.2,78.2H10.03c-2.78,0-5.04-2.55-5.04-5.68v-6.1M27.2,78.2h18.35c2.78,0,5.04-2.55,5.04-5.68v-22.29" />
+                                            <path class="st0"
+                                                d="M45.55,78.2H10.03c-2.78,0-5.04-2.55-5.04-5.68V7.46c0-3.13,2.26-5.68,5.04-5.68h35.52c2.78,0,5.04,2.55,5.04,5.68v6.1M50.59,13.57v-6.1c0-3.13-2.26-5.68-5.04-5.68h-3.27" />
+                                            <rect class="st0" x="18.17" y="58" width="19.16" height="6.06" rx="3.03"
+                                                ry="3.03" />
+                                            <path class="st0"
+                                                d="M15.42,37.42h13.95c1.78,0,3.22,1.36,3.22,3.03v.93c0,1.67-1.44,3.03-3.22,3.03h-13.95" />
+                                            <path class="st0"
+                                                d="M69.58,13.57h3.06c1.22,0,2.22.99,2.22,2.22v32c0,1.22-.99,2.22-2.22,2.22H17.64c-1.22,0-2.22-.99-2.22-2.22V15.78c0-1.22.99-2.22,2.22-2.22h43.15" />
+                                            <rect class="st0" x="22.21" y="19.47" width="12.23" height="7.49" rx="1.27"
+                                                ry="1.27" />
+                                            <line class="st1" x1="48.01" y1="36.2" x2="48.01" y2="45.45" />
+                                            <path class="st1"
+                                                d="M48.01,36.2h2.61c1.44,0,2.61,1.12,2.61,2.5h0c0,1.38-1.17,2.5-2.61,2.5h-2.61" />
+                                            <polyline class="st1" points="54.6 45.45 58.11 36.2 61.86 45.45" />
+                                            <line class="st1" x1="55.57" y1="42.9" x2="60.79" y2="42.9" />
+                                            <polyline class="st1" points="66.08 45.71 66.08 40.3 62.77 35.72" />
+                                            <line class="st1" x1="66.08" y1="40.3" x2="69.05" y2="35.89" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p>多元支付方式支持</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="8">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0,
+                                                    .st1 {
+                                                        stroke-linejoin: round;
+                                                    }
+
+                                                    .st0,
+                                                    .st1,
+                                                    .st2 {
+                                                        fill: none;
+                                                        stroke: #E70012;
+                                                        stroke-linecap: round;
+                                                    }
+
+                                                    .st0,
+                                                    .st2 {
+                                                        stroke-width: 3px;
+                                                    }
+
+                                                    .st1 {
+                                                        stroke-width: 2px;
+                                                    }
+
+                                                    .st2 {
+                                                        stroke-miterlimit: 10;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <polyline class="st0"
+                                                points="13.69 53.76 49.76 17.2 44.29 10.72 75.01 4.66 68.26 34.45 62.24 29.21 45.17 45.39" />
+                                            <polyline class="st1"
+                                                points="53.08 58.92 57.69 54.24 55.29 51.39 68.8 48.73 65.83 61.83 63.18 59.53 49.95 72.07" />
+                                            <line class="st1" x1="46.22" y1="65.87" x2="50.62" y2="61.41" />
+                                            <line class="st1" x1="41.82" y1="70.32" x2="44.38" y2="67.73" />
+                                            <line class="st0" x1="33.94" y1="45.72" x2="26.57" y2="53.32" />
+                                            <line class="st0" x1="22.5" y1="57.28" x2="4.99" y2="74.79" />
+                                            <line class="st0" x1="42.64" y1="48.15" x2="27.56" y2="62.95" />
+                                            <line class="st0" x1="23.93" y1="66.64" x2="15.67" y2="75.34" />
+                                            <line class="st1" x1="52.66" y1="64" x2="49.36" y2="67.3" />
+                                            <line class="st1" x1="46.94" y1="69.39" x2="41.82" y2="74.79" />
+                                            <g>
+                                                <g>
+                                                    <path class="st2"
+                                                        d="M27.84,22.56c.02-2.59-2.21-4.8-4.82-4.71-3.38.12-4.93,4.22-3.07,6.85,1.31,1.86,3.92,1.99,5.81,2.95,2.16,1.09,2.65,3.88,1.3,5.82-2.33,3.35-8.84,1.69-7.86-2.78" />
+                                                    <line class="st2" x1="23.03" y1="17.85" x2="23.03" y2="15.46" />
+                                                    <line class="st2" x1="23.03" y1="37.63" x2="23.03" y2="35.25" />
+                                                </g>
+                                                <path class="st2"
+                                                    d="M22.41,44.41c-9.39-.55-16.83-8.34-16.83-17.87S13.59,8.65,23.48,8.65s17.45,7.57,17.88,17.08" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p>成本更低、收费透明</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="9">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="_圖block_svg層_1" data-name="block_svg"
+                                            xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        fill: none;
+                                                        stroke: #E70012;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 3px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="st0"
+                                                d="M31.18,64.43H8.2V28.26c0-3.39,2.75-6.14,6.14-6.14h2.68" />
+                                            <path class="st0"
+                                                d="M61.54,22.12h4.12c3.39,0,6.14,2.75,6.14,6.14v36.17h-22.98" />
+                                            <path class="st0"
+                                                d="M48.82,64.43s1.32,4.16-8.82,4.16-8.82-4.16-8.82-4.16H3.6v5.38c0,3.39,3.45,6.14,6.84,6.14h59.11c3.39,0,6.84-2.75,6.84-6.14v-5.38h-27.58Z" />
+                                            <circle class="st0" cx="39.41" cy="57.46" r="3.3" />
+                                            <path class="st0"
+                                                d="M18.41,49.64c3.17-8.51,11.38-14.58,20.99-14.58s17.63,5.92,20.88,14.28" />
+                                            <path class="st0"
+                                                d="M25.88,49.02c2.82-4.5,7.82-7.5,13.53-7.5s10.71,3,13.53,7.5" />
+                                            <path class="st0"
+                                                d="M31.02,54.16c1.32-3.34,4.58-5.71,8.39-5.71s7.29,2.53,8.51,6.05" />
+                                            <path class="st0"
+                                                d="M61.69,20.55c0-4.11-3.01-7.52-6.95-8.14h0s-.02,0-.02,0c-.42-.07-.84-.11-1.28-.11,0,0-.01,0-.02,0-.22-4.59-4-8.25-8.65-8.25-3.7,0-6.85,2.32-8.09,5.59-1.2-.67-2.57-1.06-4.04-1.06-2.9,0-5.44,1.49-6.91,3.75-.15,0-.3-.02-.46-.02-4.56,0-8.25,3.69-8.25,8.25,0,3.94,2.77,7.24,6.47,8.05l31.26.2s6.95-1.75,6.95-8.25Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p>完整的安全机制</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="10">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        fill: none;
+                                                        stroke: #E70012;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 3px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <circle class="st0" cx="40" cy="33.54" r="4.71" />
+                                            <circle class="st0" cx="40" cy="7.6" r="4.71" />
+                                            <circle class="st0" cx="40" cy="40" r="15.64" />
+                                            <path class="st0" d="M8.63,30.6c3.11-10.41,11.27-18.65,21.64-21.87" />
+                                            <circle class="st0" cx="7.6" cy="40" r="4.71" />
+                                            <path class="st0" d="M30.6,71.37c-10.41-3.11-18.65-11.27-21.87-21.64" />
+                                            <circle class="st0" cx="40" cy="72.4" r="4.71" />
+                                            <path class="st0" d="M71.37,49.39c-3.11,10.41-11.27,18.65-21.64,21.87" />
+                                            <circle class="st0" cx="72.4" cy="40" r="4.71" />
+                                            <path class="st0" d="M49.4,8.63c10.41,3.11,18.65,11.27,21.87,21.64" />
+                                            <path class="st0"
+                                                d="M47.69,44.7c0,3.56-2.99,6.45-7.69,6.45s-7.69-2.89-7.69-6.45,3.44-6.45,7.69-6.45,7.69,2.89,7.69,6.45Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p>弹性的功能整合</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                    </ul>
+
+                    <!-- 彈窗內容 -->
+                    <div class="overlay" id="overlay">
+                        <div class="modal" id="modal">
+                            <button class="close-btn" id="closeBtn">&times;</button>
+                            <div class="modal-header">
+                                <img id="modalIcon" src="" alt="icon">
+                                <h2 class="modal-title" id="modalTitle">標題</h2>
+                            </div>
+                            <p id="modalContent">內容</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 政策 -->
+            <div class="policy">
+                <div class="policy_content">
+                    <div class="policy_title">
+                        <div class="policy_title_content">
+                            <p>云支付手续费政策</p>
+                        </div>
+                    </div>
+                    <div class="policy_ul">
+                        <div class="policy_ul_content">
+                            <ul>
+                                <li>
+                                    <p>类型 </p>
+                                </li>
+                                <li>
+                                    <p>说明</p>
+                                </li>
+                            </ul>
+                            <ol>
+                                <li>
+                                    <p>个人用户</p>
+                                </li>
+                                <li>
+                                    <div class="policy_ul_box">
+                                        <img src="./images/tick_1.png" alt="">
+                                        <p>完全免收手续费，无隐藏费用。 </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>商户／企业用户</p>
+                                </li>
+                                <li>
+                                    <div class="policy_ul_box">
+                                        <img src="./images/tick_1.png" alt="">
+                                        <p>提供具竞争力之费率方案，依合作模式弹性调整，最高透明度、最低成本保障。</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </duv>
+
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+    <!-- Activity -->
+    <div class="activity">
+        <div class="activity_content">
+            <div class="activity_title">
+                <div class="activity_title_content" id="activity">
+                    <h1>专属用户活动</h1>
+                    <p>支付同时享受更多回馈</p>
+                </div>
+            </div>
+            <div class="activity_main">
+                <div class="activity_main_content">
+                    <ul>
+                        <li class="activity_main_li">
+                            <div class="activity_main_li_img">
+                                <div class="activity_main_li_img_content">
+                                    <img src="./images/activity_1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="activity_main_li_text">
+                                <div class="activity_main_li_text_content">
+                                    <h2>每日签到，轻松累积积分</h2>
+                                    <p>每日登入签到即可获得积分奖励，连续签到还可获得额外加码。</p>
+                                </div>
+                            </div>
+                            <div class="activity_main_li_bg">
+                                <div class="activity_main_li_bg_content">
+                                    <img src="./images/activity_4.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="activity_main_li">
+                            <div class="activity_main_li_img">
+                                <div class="activity_main_li_img_content">
+                                    <img src="./images/activity_2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="activity_main_li_text">
+                                <div class="activity_main_li_text_content">
+                                    <h2>充值送抽奖，惊喜不间断</h2>
+                                    <p>每笔充值皆可参加抽奖活动，奖品包含现金红包、免费提现券与积分奖励等。</p>
+                                </div>
+                            </div>
+                            <div class="activity_main_li_bg">
+                                <div class="activity_main_li_bg_content">
+                                    <img src="./images/activity_4.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="activity_main_li">
+                            <div class="activity_main_li_img">
+                                <div class="activity_main_li_img_content">
+                                    <img src="./images/activity_3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="activity_main_li_text">
+                                <div class="activity_main_li_text_content">
+                                    <h2>云支付的愿景｜让支付成为更有温度的连结</h2>
+                                    <p>我们不只是打造一个支付工具，而是希望建立一个让用户感到便利、安心与回馈的支付平台。
+
+                                        未来，我们将持续优化体验、拓展功能，让云支付真正融入您的生活与商业场景，成为您值得信赖的支付伙伴。</p>
+                                </div>
+                            </div>
+                            <div class="activity_main_li_bg">
+                                <div class="activity_main_li_bg_content">
+                                    <img src="./images/activity_4.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+    <!-- vision -->
+    <div class="vision">
+        <div class="vision_content">
+            <ul>
+                <li class="vision_img">
+                    <div class="vision_img_content" id="payment">
+                        <img src="./images/vision.png" alt="">
+                    </div>
+                </li>
+                <li class="vision_text">
+                    <div class="vision_text_content">
+                        <h2>云支付的愿景</h2>
+                        <p>让支付成为更有温度的连结</p>
+                        <p>我们不只是打造一个支付工具，而是希望建立一个让用户感到便利、安心与回馈的支付平台。
+
+                            未来，我们将持续优化体验、拓展功能，让云支付真正融入您的生活与商业场景，成为您值得信赖的支付伙伴。</p>
+                    </div>
+                </li>
+        </div>
+    </div>
+
+
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+    <div class="footer" id="connect">
+        <div class="footer_content">
+            <p data-i18n="footer.copyright">Copyright © 2020-2025 云支付. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+
+
+
+    <script src="js/main.js"></script>
+    <script>
+        // 翻譯文本
+        const translations = {
+            "en": {
+
+            },
+            "zh-CN": {
+
+            },
+            "ja": {
+
+            },
+        };
+
+        let currentLang = 'en'; // ✅ 預設語言為英文
+
+        function toggleDropdown(event) {
+            event.preventDefault();
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.classList.toggle('show');
+        }
+
+        function changeLanguage(lang) {
+            currentLang = lang;
+
+            // ✅ 檢查 translations 是否存在
+            if (typeof translations === 'undefined') {
+                console.error("Translations object is not defined.");
+                return;
+            }
+
+            // ✅ 更新所有具有 data-i18n 的元素
+            const elements = document.querySelectorAll("[data-i18n]");
+            elements.forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                if (translations[lang]?.[key]) {
+                    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        el.value = translations[lang][key];
+                    } else {
+                        el.textContent = translations[lang][key];
+                    }
+                }
+            });
+
+            // ✅ 更新語言圖示
+            const languageIcon = document.getElementById('languageIcon');
+            const langIconMap = {
+                'en': '1',
+                'zh-CN': '2',
+                'ja': '3',
+                'pt': '4'
+            };
+            languageIcon.src = `./images/icon_${langIconMap[lang] || '1'}.svg`;
+
+            // ✅ 關閉語言選單
+            document.getElementById('dropdownMenu').classList.remove('show');
+
+            // ✅ 設定 <html lang="">
+            document.documentElement.lang = lang;
+        }
+
+        // ✅ 頁面載入後初始化為英文
+        document.addEventListener('DOMContentLoaded', function () {
+            changeLanguage(currentLang); // 預設語言與圖示設定
+
+            // 获取弹窗相关元素
+            const overlay = document.getElementById('overlay');
+            const closeBtn = document.getElementById('closeBtn');
+            const fixedHeader = document.querySelector('.fixed');
+
+            // 点击关闭按钮时
+            closeBtn.addEventListener('click', function () {
+                overlay.style.display = 'none';
+                if (fixedHeader) {
+                    fixedHeader.classList.remove('hidden');
+                }
+            });
+
+            // 点击遮罩层时
+            overlay.addEventListener('click', function (e) {
+                if (e.target === overlay) {
+                    overlay.style.display = 'none';
+                    if (fixedHeader) {
+                        fixedHeader.classList.remove('hidden');
+                    }
+                }
+            });
+
+            // 显示弹窗时
+            function showModal() {
+                overlay.style.display = 'flex';
+                if (fixedHeader) {
+                    fixedHeader.classList.add('hidden');
+                }
+            }
+
+            // 为所有需要触发弹窗的元素添加点击事件
+            document.querySelectorAll('.block').forEach(block => {
+                block.addEventListener('click', showModal);
+            });
+        });
+    </script>
+</body>
+
+</html>
