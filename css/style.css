@@ -854,6 +854,7 @@ body {
 .activity .activity_content .activity_title .activity_title_content p {
   font-size: 16px;
   text-align: center;
+  margin-top: 10px;
 }
 
 .activity .activity_content .activity_main {
@@ -898,6 +899,7 @@ body {
 .activity .activity_content .activity_main .activity_main_content ul .activity_main_li .activity_main_li_text .activity_main_li_text_content h2 {
   color: #E70012;
   font-size: 32px;
+  line-height: 1.6;
   font-weight: 900;
 }
 
