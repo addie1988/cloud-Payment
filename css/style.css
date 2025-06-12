@@ -107,10 +107,6 @@ body {
   display: inline-block;
 }
 
-.header .header_content .logo .logo_content a img {
-  margin-left: 53px;
-}
-
 .header .header_content .menu_language {
   width: 70%;
   display: flex;
