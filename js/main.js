@@ -68,8 +68,8 @@ function changeLanguage(langCode) {
 
   // 更新頂部圖示
   const topIcon = document.querySelector('.dropdown-toggle img');
-  const newIconSrc = `./images/icon_${langCode === 'en' ? '1' :
-    langCode === 'zh-CN' ? '2' :
+  const newIconSrc = `./images/icon_${langCode === 'zh-CN' ? '1' :
+    langCode === 'en' ? '2' :
       langCode === 'ja' ? '3' :
         langCode === 'pt' ? '4' : '1'
     }.svg`;
@@ -102,8 +102,8 @@ function setLanguageIcon() {
   }
 
   // 設置對應圖示
-  const newIconSrc = `./images/icon_${currentLang === 'en' ? '1' :
-    currentLang === 'zh-CN' ? '2' :
+  const newIconSrc = `./images/icon_${currentLang === 'zh-CN' ? '1' :
+    currentLang === 'en' ? '2' :
       currentLang === 'ja' ? '3' :
         currentLang === 'pt' ? '4' : '1'
     }.svg`;
