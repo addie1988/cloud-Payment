@@ -794,6 +794,12 @@ body {
   .advantages .advantages_content .policy {
     margin: 0 auto;
   }
+  .advantages .advantages_content .policy .policy_content .policy_ul .policy_ul_content ul {
+    width: 90%;
+  }
+  .advantages .advantages_content .policy .policy_content .policy_ul .policy_ul_content ol {
+    width: 90%;
+  }
   .advantages .advantages_content .policy .policy_content .policy_ul .policy_ul_content ol li:nth-child(2) .policy_ul_box {
     display: block;
   }
@@ -986,6 +992,7 @@ body {
 }
 
 .vision .vision_content ul .vision_img {
+  width: 40%;
   position: relative;
   margin: 0 30px;
 }
@@ -999,6 +1006,7 @@ body {
 }
 
 .vision .vision_content ul .vision_text {
+  width: 40%;
   position: relative;
   margin: 0 30px;
 }
@@ -1009,12 +1017,13 @@ body {
 
 .vision .vision_content ul .vision_text .vision_text_content h2 {
   font-size: 32px;
-  color: #E70012;
+  color: #fff;
   font-size: 32px;
   font-weight: 900;
 }
 
 .vision .vision_content ul .vision_text .vision_text_content p {
+  color: #fff;
   font-size: 16px;
   white-space: pre-line;
   margin-top: 10px;
