@@ -785,7 +785,10 @@ body
         width: $max-width
         margin: 0 auto
         ul
-            @extend %display_flex
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: self-end
             .vision_img
                 position: relative
                 margin: 0 30px
