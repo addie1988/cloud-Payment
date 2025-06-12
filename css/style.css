@@ -360,7 +360,6 @@ body {
   .header .header_content .menu_language .menu_language_content .nav-menu .menu_content ul li a {
     width: 100%;
     display: inline-block;
-    margin: 0 20px;
   }
   .header .header_content .menu_language .menu_language_content .show {
     display: flex;
