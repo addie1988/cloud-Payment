@@ -170,11 +170,13 @@ body {
   width: 20%;
   position: relative;
   display: flex;
+  justify-content: flex-end;
   margin-left: 20px;
 }
 
 .header .header_content .menu_language .menu_language_content .language .language_content {
-  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header .header_content .menu_language .menu_language_content .language .language_content .dropdown-toggle {
@@ -187,6 +189,7 @@ body {
 .header .header_content .menu_language .menu_language_content .language .dropdown-content {
   display: none;
   position: absolute;
+  top: 36px;
   right: 0;
   background: linear-gradient(140deg, #f3af49, #e70012);
   min-width: 160px;

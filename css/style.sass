@@ -140,9 +140,11 @@ body
                     width: 20%
                     position: relative
                     display: flex
+                    justify-content: flex-end
                     margin-left: 20px
                     .language_content
-                        margin: 0 auto
+                        display: flex
+                        justify-content: flex-end
                         .dropdown-toggle
                             font-size: 16px
                             cursor: pointer
@@ -151,6 +153,7 @@ body
                     .dropdown-content
                         display: none
                         position: absolute
+                        top: 36px
                         right: 0
                         background: $main_color
                         min-width: 160px
