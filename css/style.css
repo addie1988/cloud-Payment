@@ -508,7 +508,7 @@ body {
 }
 
 .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block .block_content {
-  height: 324px;
+  height: 100%;
   margin: 0 auto;
   background: linear-gradient(140deg, #f3af49, #e70012);
 }
@@ -766,9 +766,6 @@ body {
   .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block {
     width: 24%;
   }
-  .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block .block_content {
-    height: 450px;
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -777,9 +774,6 @@ body {
   }
   .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block {
     width: 40%;
-  }
-  .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block .block_content {
-    height: 350px;
   }
   .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block .block_content .block_svg::after {
     top: -80px;
@@ -796,9 +790,6 @@ body {
   .advantages .advantages_content {
     background: none;
     border-radius: 0;
-  }
-  .advantages .advantages_content .advantages_list .advantages_list_content .block-container .block .block_content {
-    height: 290px;
   }
   .advantages .advantages_content .policy {
     margin: 0 auto;
@@ -905,13 +896,13 @@ body {
   font-size: 16px;
   white-space: pre-line;
   line-height: 1.6;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .activity .activity_content .activity_main .activity_main_content ul .activity_main_li .activity_main_li_bg {
   position: absolute;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .activity .activity_content .activity_main .activity_main_content ul .activity_main_li .activity_main_li_bg .activity_main_li_bg_content {
