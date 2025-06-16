@@ -78,12 +78,41 @@ function changeLanguage(langCode) {
     topIcon.alt = `icon_${langCode}`;
   }
 
+  // 更新所有具有 data-i18n 的元素
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[langCode]?.[key]) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.value = translations[langCode][key];
+      } else {
+        el.textContent = translations[langCode][key];
+      }
+    }
+  });
+
+  // 更新彈窗內容
+  const blocks = document.querySelectorAll('.block');
+  blocks.forEach(block => {
+    const id = block.getAttribute('data-id');
+    if (id) {
+      const titleKey = `modal.${id}.title`;
+      const contentKey = `modal.${id}.content`;
+      if (translations[langCode]?.[titleKey]) {
+        block.setAttribute('data-title', translations[langCode][titleKey]);
+      }
+      if (translations[langCode]?.[contentKey]) {
+        block.setAttribute('data-content', translations[langCode][contentKey]);
+      }
+    }
+  });
+
   // 設置 cookie
   document.cookie = `googtrans=/en/${langCode}; path=/; domain=.${window.location.host}`;
   document.cookie = `googtrans=/en/${langCode}; path=/`;
 
-  // 重新加載翻譯
-  location.reload();
+  // 設置 <html lang="">
+  document.documentElement.lang = langCode;
 }
 
 // 檢查當前語言並設置對應圖示
@@ -93,7 +122,7 @@ function setLanguageIcon() {
 
   // 從 cookie 獲取當前語言
   const cookie = document.cookie.split(';').find(c => c.trim().startsWith('googtrans='));
-  let currentLang = 'en'; // 默認英文
+  let currentLang = 'zh-CN'; // 默認中文
 
   if (cookie) {
     const langCode = cookie.split('/')[2];
@@ -108,11 +137,13 @@ function setLanguageIcon() {
 
   topIcon.src = newIconSrc;
   topIcon.alt = `icon_${currentLang}`;
+
+  // 初始化翻譯
+  changeLanguage(currentLang);
 }
 
 // 頁面加載時執行
 window.addEventListener('load', setLanguageIcon);
-
 
 // Close dropdown menus when clicking outside
 document.addEventListener('click', (event) => {
