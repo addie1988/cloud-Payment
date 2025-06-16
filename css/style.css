@@ -303,7 +303,7 @@ body {
 .banner .banner_content .banner_img .banner_main_content .banner_main_button {
   position: relative;
   width: 50%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .banner .banner_content .banner_img .banner_main_content .banner_main_button .banner_main_button_content {
