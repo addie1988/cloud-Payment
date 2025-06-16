@@ -103,8 +103,7 @@ function setLanguageIcon() {
   // 設置對應圖示
   const newIconSrc = `./images/icon_${currentLang === 'zh-CN' ? '1' :
     currentLang === 'en' ? '2' :
-      currentLang === 'ja' ? '3' :
-        currentLang === 'pt' ? '4' : '1'
+      currentLang === 'ja' ? '3' : '1'
     }.svg`;
 
   topIcon.src = newIconSrc;
