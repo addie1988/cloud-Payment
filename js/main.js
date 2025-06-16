@@ -70,8 +70,7 @@ function changeLanguage(langCode) {
   const topIcon = document.querySelector('.dropdown-toggle img');
   const newIconSrc = `./images/icon_${langCode === 'zh-CN' ? '1' :
     langCode === 'en' ? '2' :
-      langCode === 'ja' ? '3' :
-        langCode === 'pt' ? '4' : '1'
+      langCode === 'ja' ? '3' : '1'
     }.svg`;
 
   if (topIcon) {
